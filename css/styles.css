@@ -88,7 +88,7 @@ a {
 }
 /* section */
 .section {
-  padding: 4rem 0;
+  padding: 5rem 0;
 }
 /* title */
 .title-wrapper {
@@ -106,7 +106,7 @@ a {
 /* section center */
 .section-center {
   width: 85vw;
-  margin: 4rem auto;
+  margin: 4rem auto 2rem auto;
   max-width: 1170px;
 }
 /*************** end of global styles ***************/
@@ -175,6 +175,7 @@ a {
     /* children */
     flex: 0 0 calc(50% - 2rem);
     align-self: center;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1170px) {
@@ -194,3 +195,8 @@ a {
   }
 }
 /*************** end of about section ***************/
+/*************** featured tours section ***************/
+.featured-tours {
+  background: var(--mainWhite);
+}
+/*************** end of featured tours section ***************/
