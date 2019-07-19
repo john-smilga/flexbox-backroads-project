@@ -30,6 +30,10 @@ body {
   font-size: 1rem;
 }
 /*************** global styles ***************/
+img {
+  width: 100%;
+  display: block;
+}
 h1,
 h2,
 h3,
@@ -43,14 +47,21 @@ h6 {
 h1 {
   font-size: 3.3rem;
 }
+h2 {
+  font-size: 2.3rem;
+}
+h3 {
+  font-size: 2rem;
+}
 p {
   margin-bottom: 1.25rem;
-  font-weight: 300;
+  line-height: 2;
 }
 a {
   text-decoration: none;
 }
 /* more global styles */
+/* buttons */
 .btn-white,
 .btn-primary {
   text-transform: uppercase;
@@ -75,6 +86,29 @@ a {
   background: transparent;
   color: var(--primaryColor);
 }
+/* section */
+.section {
+  padding: 4rem 0;
+}
+/* title */
+.title-wrapper {
+  margin-bottom: 2rem;
+}
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.6rem;
+  letter-spacing: 0.5rem;
+}
+.subtitle {
+  color: var(--primaryColor);
+}
+/* section center */
+.section-center {
+  width: 85vw;
+  margin: 4rem auto;
+  max-width: 1170px;
+}
 /*************** end of global styles ***************/
 
 /*************** navbar ***************/
@@ -92,7 +126,7 @@ a {
 .hero-banner {
   text-align: center;
   color: var(--mainWhite);
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 .hero-title {
   text-transform: uppercase;
@@ -119,4 +153,44 @@ a {
   }
 }
 /* buttons added to global styles */
-/*************** end ofhero ***************/
+/*************** about section ***************/
+/* section added to globals */
+/* title added to globals */
+/* section center added to globals */
+.about-img,
+.about-info {
+  margin-bottom: 4rem;
+}
+.about-info h3 {
+  text-transform: uppercase;
+}
+@media screen and (min-width: 992px) {
+  .about-center {
+    /* flex parent */
+    display: flex;
+    justify-content: space-between;
+  }
+  .about-img,
+  .about-info {
+    /* children */
+    flex: 0 0 calc(50% - 2rem);
+    align-self: center;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .about-img::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0.5rem solid var(--primaryColor);
+    top: -1.5rem;
+    left: -1.5rem;
+    z-index: -1;
+    border-radius: var(--borderRadius);
+  }
+  .about-img {
+    position: relative;
+  }
+}
+/*************** end of about section ***************/
