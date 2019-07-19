@@ -84,8 +84,7 @@ a {
 .hero {
   /* min-height: calc(100vh - 62px); */
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../images/main.jpeg") center/cover no-repeat;
+  background: var(--primaryColor);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,6 +105,18 @@ a {
   margin-bottom: 2rem;
   letter-spacing: var(--mainSpacing);
   line-height: 2;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background: linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 0.7)),
+      url("../images/main.jpeg") center/cover no-repeat;
+  }
+  .hero-title {
+    font-size: 4.5rem;
+  }
+  .hero-text {
+    width: 70%;
+  }
 }
 /* buttons added to global styles */
 /*************** end ofhero ***************/
