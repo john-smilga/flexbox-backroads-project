@@ -154,6 +154,9 @@ a {
 }
 /* buttons added to global styles */
 /*************** about section ***************/
+.about {
+  background: var(--mainWhite);
+}
 /* section added to globals */
 /* title added to globals */
 /* section center added to globals */
@@ -187,16 +190,78 @@ a {
     border: 0.5rem solid var(--primaryColor);
     top: -1.5rem;
     left: -1.5rem;
-    z-index: -1;
     border-radius: var(--borderRadius);
   }
   .about-img {
     position: relative;
   }
+  .about-photo {
+    position: relative;
+  }
 }
 /*************** end of about section ***************/
+/*************** services section ***************/
+.service {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.service-icon {
+  background: var(--primaryColor);
+  padding: 0.5rem;
+  display: inline-block;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.service-title {
+  text-transform: uppercase;
+}
+.service-text {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-weight: 300;
+}
+@media screen and (min-width: 576px) {
+  .services-center {
+    display: flex;
+    /* after */
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .service {
+    flex: 0 0 calc(50% - 1rem);
+    /* back to services */
+  }
+}
+@media screen and (min-width: 992px) {
+  .service {
+    flex: 0 0 calc(33.333% - 1rem);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .service {
+    display: flex;
+    text-align: left;
+  }
+  .service-icon {
+    align-self: start;
+  }
+  .service-info {
+    padding-left: 1rem;
+  }
+  .service-title {
+    margin-bottom: 0.5rem;
+  }
+  .service-text {
+    width: 90%;
+    margin: 0;
+  }
+}
+
+/*************** end of services section ***************/
 /*************** featured tours section ***************/
 .featured-tours {
   background: var(--mainWhite);
 }
+
 /*************** end of featured tours section ***************/
