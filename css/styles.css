@@ -303,7 +303,6 @@ a {
 }
 .tour-link {
   text-align: center;
-  margin-top: 3rem;
 }
 /* tour date */
 .tour-img-container {
@@ -329,12 +328,52 @@ a {
 }
 @media screen and (min-width: 1170px) {
   .tour-card {
-    margin-bottom: 0;
     flex: 0 0 calc(33.3333% - 1rem);
   }
 }
 /*************** end of featured tours section ***************/
 /*************** gallery ***************/
+.gallery {
+  padding-top: 2rem;
+}
+.gallery-img-container {
+  position: relative;
+  background: var(--primaryColor);
+}
+.gallery-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+  color: var(--mainWhite);
+  transition: var(--mainTransition);
+  opacity: 0;
+  cursor: pointer;
+}
+.gallery-img {
+  transition: var(--mainTransition);
+}
+.gallery-img-container:hover .gallery-img {
+  opacity: 0.5;
+}
+.gallery-img-container:hover .gallery-icon {
+  opacity: 1;
+}
+@media screen and (min-width: 768px) {
+  .gallery-center {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery-img-container {
+    flex: 0 0 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .gallery-img-container {
+    flex: 0 0 25%;
+  }
+}
 /*************** end of gallery ***************/
 /*************** deals ***************/
 .input-group {
@@ -354,7 +393,7 @@ a {
   line-height: 1.5;
   font-weight: 300;
   letter-spacing: var(--mainSpacing);
-  border: 1px solid var(--primaryColor);
+  border: 2px solid var(--primaryColor);
   background: transparent;
   text-transform: uppercase;
   outline: none;
@@ -364,12 +403,12 @@ a {
 }
 .btn-submit {
   border-left: none;
-  background: var(--primaryColor);
   cursor: pointer;
   transition: var(--mainTransition);
 }
 .btn-submit:hover {
   color: var(--mainWhite);
+  background: var(--primaryColor);
 }
 /*************** end of deals ***************/
 /*************** footer ***************/

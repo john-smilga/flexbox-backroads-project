@@ -14,7 +14,7 @@
   </head>
   <body>
     <!-- header  -->
-    <header>
+    <header id="home">
       <!-- navbar -->
       <nav></nav>
       <!-- hero component -->
@@ -73,7 +73,7 @@
       </div>
       <!-- end of title  -->
       <div class="section-center services-center">
-        <!-- single servxice -->
+        <!-- single service -->
         <article class="service">
           <span class="service-icon"><i class="fas fa-wallet fa-fw"></i></span>
           <div class="service-info">
@@ -85,7 +85,7 @@
           </div>
         </article>
         <!-- end of single service -->
-        <!-- single servxice -->
+        <!-- single service -->
         <article class="service">
           <span class="service-icon"><i class="fas fa-tree fa-fw"></i></span>
           <div class="service-info">
@@ -97,7 +97,7 @@
           </div>
         </article>
         <!-- end of single service -->
-        <!-- single servxice -->
+        <!-- single service -->
         <article class="service">
           <span class="service-icon"><i class="fas fa-socks fa-fw"></i></span>
           <div class="service-info">
@@ -113,7 +113,7 @@
     </section>
     <!-- end of services -->
     <!-- featured tours -->
-    <section class="section featured-tours" id="featured-tours">
+    <section class="section featured-tours" id="featured">
       <!-- title  -->
       <div class="title-wrapper">
         <h2 class="title">featured <span class="subtitle">tours</span></h2>
@@ -187,6 +187,28 @@
           </div>
         </article>
         <!-- end of single tour -->
+        <!-- single tour -->
+        <article class="tour-card">
+          <div class="tour-img-container">
+            <img src="./images/tour-4.jpeg" class="tour-img" alt="" />
+            <p class="tour-date">december 5th, 2019</p>
+          </div>
+          <!-- tour footer -->
+          <div class="tour-footer">
+            <h4 class="tour-title">kenya highlights</h4>
+            <!-- tour info -->
+            <div class="tour-info">
+              <p class="tour-country">
+                <span><i class="fas fa-map"></i></span> kenya
+              </p>
+              <div class="tour-details">
+                <p>22 days</p>
+                <p>from $5400</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- end of single tour -->
       </div>
       <!-- end of tours center -->
       <div class="tour-link">
@@ -194,8 +216,54 @@
       </div>
     </section>
     <!-- end of featured tours -->
-    <!-- galler  -->
-    <!-- end of galler  -->
+    <!-- gallery  -->
+    <section id="gallery" class="gallery">
+      <!-- title  -->
+      <div class="title-wrapper">
+        <h2 class="title">our <span class="subtitle ">gallery</span></h2>
+      </div>
+      <!-- end of title  -->
+
+      <div class="gallery-center">
+        <!-- single item -->
+        <div class="gallery-img-container">
+          <img src="./images/tour-1.jpeg" class="gallery-img" alt="" />
+          <span class="gallery-icon"><i class="fas fa-search"></i></span>
+        </div>
+        <!-- end of single item -->
+        <!-- single item -->
+        <div class="gallery-img-container">
+          <img src="./images/tour-2.jpeg" class="gallery-img" alt="" />
+          <span class="gallery-icon"><i class="fas fa-search"></i></span>
+        </div>
+        <!-- end of single item -->
+        <!-- single item -->
+        <div class="gallery-img-container">
+          <img src="./images/tour-3.jpeg" class="gallery-img" alt="" />
+          <span class="gallery-icon"><i class="fas fa-search"></i></span>
+        </div>
+        <!-- end of single item -->
+        <!-- single item -->
+        <div class="gallery-img-container">
+          <img src="./images/tour-4.jpeg" class="gallery-img" alt="" />
+          <span class="gallery-icon"><i class="fas fa-search"></i></span>
+        </div>
+        <!-- end of single item -->
+        <!-- single item -->
+        <div class="gallery-img-container">
+          <img src="./images/tour-5.jpeg" class="gallery-img" alt="" />
+          <span class="gallery-icon"><i class="fas fa-search"></i></span>
+        </div>
+        <!-- end of single item -->
+        <!-- single item -->
+        <div class="gallery-img-container">
+          <img src="./images/tour-6.jpeg" class="gallery-img" alt="" />
+          <span class="gallery-icon"><i class="fas fa-search"></i></span>
+        </div>
+        <!-- end of single item -->
+      </div>
+    </section>
+    <!-- end of gallery  -->
     <!-- contact -->
     <section class="section deals" id="deals">
       <!-- title  -->
@@ -206,9 +274,7 @@
       <form>
         <div class="input-group">
           <input type="email" class="form-control" placeholder="your email" />
-          <div class="input-group-addon">
-            <button type="submit" class="btn-submit">submit</button>
-          </div>
+          <button type="submit" class="btn-submit">submit</button>
         </div>
       </form>
     </section>
@@ -217,12 +283,12 @@
     <footer class="section footer">
       <!-- footer links -->
       <div class="footer-links">
-        <a href="#" class="footer-link">home</a>
+        <a href="#home" class="footer-link">home</a>
         <a href="#about" class="footer-link">about</a>
         <a href="#services" class="footer-link">services</a>
-        <a href="#" class="footer-link">featured</a>
-        <a href="#" class="footer-link">gallery</a>
-        <a href="#" class="footer-link">contact</a>
+        <a href="#featured" class="footer-link">featured</a>
+        <a href="#gallery" class="footer-link">gallery</a>
+        <a href="#deals" class="footer-link">deals</a>
       </div>
       <!-- footer icons -->
       <div class="footer-icons">
