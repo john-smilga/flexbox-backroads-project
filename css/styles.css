@@ -352,7 +352,7 @@ a {
 .footer-link {
   color: var(--mainWhite);
   text-transform: capitalize;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-right: 1rem;
   letter-spacing: var(--mainSpacing);
   transition: var(--mainTransition);
@@ -371,5 +371,5 @@ a {
 }
 .copyright {
   text-transform: capitalize;
-  font-size: 1.5rem;
+  letter-spacing: var(--mainSpacing);
 }
