@@ -53,9 +53,13 @@ h2 {
 h3 {
   font-size: 2rem;
 }
+h4 {
+  font-size: 1.2rem;
+}
 p {
   margin-bottom: 1.25rem;
   line-height: 2;
+  font-weight: 300;
 }
 a {
   text-decoration: none;
@@ -139,6 +143,7 @@ a {
   margin-bottom: 2rem;
   letter-spacing: var(--mainSpacing);
   line-height: 2;
+  font-weight: 400;
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -238,7 +243,7 @@ a {
     flex: 0 0 calc(33.333% - 1rem);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1170px) {
   .service {
     display: flex;
     text-align: left;
@@ -263,5 +268,108 @@ a {
 .featured-tours {
   background: var(--mainWhite);
 }
-
+.tour-card {
+  box-shadow: var(--lightShadow);
+  transition: var(--mainTransition);
+  margin-bottom: 4rem;
+}
+.tour-card:hover {
+  box-shadow: var(--darkShadow);
+}
+.tour-footer {
+  padding: 1.2rem 1.5rem;
+}
+.tour-title {
+  text-transform: capitalize;
+}
+.tour-country {
+  color: var(--primaryColor);
+  text-transform: capitalize;
+}
+.tour-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.tour-details p {
+  line-height: 0.2;
+  text-transform: capitalize;
+  color: var(--darkGrey);
+  letter-spacing: 0.02rem;
+}
+.tour-country {
+  align-self: center;
+  color: var(--primaryColor);
+}
+.tour-link {
+  text-align: center;
+  margin-top: 3rem;
+}
+/* tour date */
+.tour-img-container {
+  position: relative;
+}
+.tour-date {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: var(--primaryColor);
+  text-transform: capitalize;
+  padding: 0.25rem 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .featured-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .tour-card {
+    flex: 0 0 calc(50% - 1rem);
+  }
+}
+@media screen and (min-width: 1170px) {
+  .tour-card {
+    margin-bottom: 0;
+    flex: 0 0 calc(33.3333% - 1rem);
+  }
+}
 /*************** end of featured tours section ***************/
+/*************** footer ***************/
+.footer {
+  background: var(--mainBlack);
+  color: var(--mainWhite);
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.footer-links,
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+.footer-link {
+  color: var(--mainWhite);
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  letter-spacing: var(--mainSpacing);
+  transition: var(--mainTransition);
+}
+.footer-link:hover {
+  color: var(--primaryColor);
+}
+.footer-icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: var(--mainWhite);
+  transition: var(--mainTransition);
+}
+.footer-icon:hover {
+  color: var(--primaryColor);
+}
+.copyright {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
