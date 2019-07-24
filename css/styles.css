@@ -519,6 +519,8 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* optional */
+    flex-wrap: wrap;
   }
   .nav-header {
     padding: 0 0;
@@ -541,10 +543,10 @@ a {
     max-width: 1170px;
   }
   .nav-link {
-    margin-right: 0.5rem;
+    margin-right: 0.7rem;
   }
   .nav-icon {
-    margin-right: 0.5rem;
+    margin-right: 0.7rem;
     color: var(--primaryColor);
     font-size: 1.2rem;
     transition: var(--mainTransition);
@@ -557,3 +559,13 @@ a {
 /* set hero to 
 min-height:calc(100vh - 62px);
 */
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--mainGrey);
+  transition: var(--mainTransition);
+  box-shadow: var(--lightShadow);
+  z-index: 1;
+}
